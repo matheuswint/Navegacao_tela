@@ -108,7 +108,7 @@ function CadastroScreen({ pets, setPets }) {
     </TouchableOpacity>
   );
 
-  // Ação final
+ // Ação final
   const handleSubmit = () => {
     const novoPet = {
       id: String(pets.length + 1),
@@ -117,8 +117,8 @@ function CadastroScreen({ pets, setPets }) {
       sexo,
       historia: `Pet cadastrado por ${nome}, porte ${porte}.`,
       foto: especie === "gato"
-        ? "https://placekitten.com/200/200"
-        : "https://place-puppy.com/200x200",
+        ? "https://i.pinimg.com/474x/0c/79/b7/0c79b7dae034fdd36b5304427dc79f05.jpg"
+        : "https://i.pinimg.com/474x/f5/7c/4c/f57c4c0724668fa16a842fee369433ab.jpg",
     };
 
     setPets([...pets, novoPet]);
@@ -208,8 +208,8 @@ const Tab = createBottomTabNavigator();
 
 export default function App() {
   const [pets, setPets] = useState([
-    { id: "1", nome: "Rex", idade: "2 anos", sexo: "Macho", historia: "Um cachorro muito brincalhão.", foto: "https://place-puppy.com/200x200" },
-    { id: "2", nome: "Luna", idade: "1 ano", sexo: "Fêmea", historia: "Gatinha carinhosa que adora dormir.", foto: "https://placekitten.com/200/200" },
+    { id: "1", nome: "Thor", idade: "2 anos", sexo: "Macho", historia: "Um cachorro muito brincalhão.", foto: "https://i.pinimg.com/474x/0c/79/b7/0c79b7dae034fdd36b5304427dc79f05.jpg" },
+    { id: "2", nome: "Laika", idade: "1 ano", sexo: "Fêmea", historia: "Gatinha carinhosa que adora dormir.", foto: "https://i.pinimg.com/474x/f5/7c/4c/f57c4c0724668fa16a842fee369433ab.jpg" },
   ]);
 
   return (
